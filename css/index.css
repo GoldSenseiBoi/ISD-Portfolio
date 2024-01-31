@@ -2,6 +2,35 @@ body{
     background-color: rgb(17,17,17);
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.nav{
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.corp1{
+  color: white;
+}
+
+h2{
+  color: #3ecd5e;
+}
+
+p{
+  text-align: justify;
+}
+
 a{
     
 }
