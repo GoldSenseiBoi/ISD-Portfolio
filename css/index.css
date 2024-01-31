@@ -10,7 +10,17 @@ body{
 
 }
 
-.nav{
+.head .nav ul {
+  display: flex;
+  
+}
+
+.head .nav ul li {
+  margin: 0 20px;
+  
+}
+
+.head{
   position: relative;
   padding: 30px;
   display: flex;
