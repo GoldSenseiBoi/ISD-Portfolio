@@ -38,7 +38,8 @@
 }
 
 .about_us p{
-  width: 1500px;
+  padding-left: 250px;
+  padding-right: 250px;
   align-content: center;
 }
 
@@ -57,7 +58,12 @@
 
 .head .nav ul {
   display: flex;
+  padding-right: 120px;
   
+}
+.Titre{
+  padding-left: 12%;
+  margin : 20px;
 }
 
 .head .nav ul li {
