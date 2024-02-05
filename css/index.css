@@ -1,8 +1,50 @@
-body{
-    background-color: rgb(17,17,17);
-    
+.container_first{
+
+  display: flex;
+  background-color: rgb(17,17,17);
+  align-content: center;
+  flex-direction: column;
   
   
+
+}
+.descript{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.corp1{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+.its_me{
+  display: flex;
+  justify-content: space-around;
+
+}
+.about_us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  
+ 
+
+}
+
+.about_us p{
+  width: 1500px;
+  align-content: center;
+}
+
+.titre_part{
+  display: flex;
+  align-items: center;
 }
 
 *{
