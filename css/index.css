@@ -4,9 +4,6 @@
   background-color: rgb(17,17,17);
   align-content: center;
   flex-direction: column;
-  
-  
-
 }
 .descript{
   display: flex;
@@ -30,11 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  
-  
  
-
 }
 
 .about_us p{
@@ -64,6 +57,7 @@
 .Titre{
   padding-left: 12%;
   margin : 20px;
+  color: #3ecd5e;
 }
 
 .head .nav ul li {
@@ -84,12 +78,11 @@
   color: white;
 }
 
-h2{
-  color: #3ecd5e;
-}
+
 
 p{
   text-align: justify;
+  
 }
 
 a{
@@ -101,180 +94,121 @@ a{
 }
 
 
-.button {
-  --😀: #644dff;
-  --😀😀: #4836bb;
-  --😀😀😀: #654dff63;
-  cursor: pointer;
-  width: 184px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.125em;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #fff;
-  background: var(--😀);
-  border: 2px solid var(--😀😀);
-  border-radius: .75rem;
-  box-shadow: 0 8px 0 var(--😀😀);
-  transform: skew(-10deg);
-  transition: all .1s ease;
-  filter: drop-shadow(0 15px 20px var(--😀😀😀));
-}
-
-.button:active {
-  letter-spacing: 0px;
-  transform: skew(-10deg) translateY(8px);
-  box-shadow: 0 0 0 var(--😀😀😀);
-}
 
 
 /*technologies cards */
-.ag-format-container {
-  width: 1142px;
-  margin: 0 auto;
-}
 
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container {
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background:rgb(17,17,17);
+  border-radius: 10px;
 }
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
 
-  margin: 0 15px 30px;
-
-  overflow: hidden;
-
-  border-radius: 28px;
-}
-.ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #121212;
-
-  overflow: hidden;
-
+.card {
   position: relative;
-}
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-  text-decoration: none;
-  color: #FFF;
-}
-.ag-courses-item_link:hover .ag-courses-item_bg {
-  -webkit-transform: scale(10);
-  -ms-transform: scale(10);
-  transform: scale(10);
-}
-.ag-courses-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
-
+  background: #333;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
-
-  font-weight: bold;
-  font-size: 30px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
 }
-.ag-courses-item_date-box {
-  font-size: 18px;
-  color: #FFF;
 
-  z-index: 2;
-  position: relative;
+.card__image-container {
+  margin: -2rem -2rem 1rem -2rem;
 }
-.ag-courses-item_date {
-  font-weight: bold;
-  color: #f9b234;
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
-}
-.ag-courses-item_bg {
-  height: 128px;
-  width: 128px;
-  background-color: #f9b234;
 
-  z-index: 1;
+.card__line {
+  opacity: 0;
+  animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+}
+
+.card__image {
+  opacity: 0;
+  animation: ImageFadeIn 0.8s 1.4s forwards;
+}
+
+.card__title {
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.card__content {
+  margin-top: -1rem;
+  opacity: 0;
+  animation: ContentFadeIn 0.8s 1.6s forwards;
+}
+
+.card__svg {
   position: absolute;
-  top: -75px;
-  right: -75px;
-
-  border-radius: 50%;
-
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
+  left: 0;
+  top: 115px;
 }
 
-
-
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path(
+      "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
+    );
+    stroke: #fff;
   }
-  .ag-courses-item_title {
-    font-size: 24px;
+
+  50% {
+    opacity: 1;
+    d: path(
+      "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
+    );
+    stroke: #888bff;
+  }
+
+  100% {
+    opacity: 1;
+    d: path(
+      "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
+    );
+    stroke: #545581;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .ag-format-container {
-    width: 96%;
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
   }
 
-}
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
-  }
-  .ag-courses-item_link {
-    padding: 22px 40px;
-  }
-  .ag-courses-item_date-box {
-    font-size: 16px;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
+@keyframes ImageFadeIn {
+  0% {
+    transform: translate(-0.5rem, -0.5rem) scale(1.05);
+    opacity: 0;
+    filter: blur(2px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 
   /* Fin technologies cards*/
