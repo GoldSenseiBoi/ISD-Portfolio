@@ -97,13 +97,27 @@ a{
 
 
 /*technologies cards */
+.container-tech{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 250px;
+  padding-left: 250px;
+  padding-top: 100px;
+  
+
+}
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 350px;
-  background:rgb(17,17,17);
+  width: 20%;
+  margin: 20px;
+  background: #444;
   border-radius: 10px;
 }
 
@@ -209,6 +223,7 @@ a{
     filter: blur(0);
   }
 }
+
 
 
   /* Fin technologies cards*/
