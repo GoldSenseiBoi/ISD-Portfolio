@@ -86,7 +86,14 @@ p{
 }
 
 a{
-    
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav ul li a:hover{
+
+  color: #3ecd5e;
 }
 /* nav*/
 .nav ul li {
@@ -153,6 +160,7 @@ a{
   margin-bottom: 10px;
   font-weight: 800;
   letter-spacing: 0.01em;
+  font-size: large;
 }
 
 .card__content {
@@ -236,6 +244,8 @@ a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 200px;
     
     
   
