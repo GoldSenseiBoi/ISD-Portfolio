@@ -104,254 +104,117 @@ a{
 
 
 /*technologies cards */
-.container-tech{
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-right: 250px;
-  padding-left: 250px;
-  padding-top: 100px;
-  
+.container-tech {
+display: flex;
+align-items: center;
+justify-content: center;
+
+
 
 }
-
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 350px;
-  width: 22%;
-  margin: 20px;
-  background: rgb(17,17,17);
-  border-radius: 10px;
-}
-
-.card {
   position: relative;
-  background: #333;
-  width: 250px;
-  height: 350px;
-  border-radius: 10px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  background: #282828;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
 }
 
-.card__image-container {
-  margin: -2rem -2rem 1rem -2rem;
+.container .skill-box {
+  width: 100%;
+  margin: 25px 0;
 }
 
-.card__line {
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(226, 226, 226);
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(236, 236, 236, 0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: rgb(226, 226, 226);
+  animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
-  animation: LineFadeIn 0.8s 0.8s forwards ease-in;
 }
 
-.card__image {
-  opacity: 0;
-  animation: ImageFadeIn 0.8s 1.4s forwards;
+.skill-per.html {
+  /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.1s;
 }
 
-.card__title {
-  color: white;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  font-size: large;
+.skill-per.scss {
+  /*progreso de las diferentes lenguajes*/
+  width: 80%;
+  animation-delay: 0.1s;
 }
 
-.card__content {
-  margin-top: -1rem;
-  opacity: 0;
-  animation: ContentFadeIn 0.8s 1.6s forwards;
+.skill-per.Boostrap {
+  /*progreso de las diferentes lenguajes*/
+  width: 50%;
+  animation-delay: 0.2s;
 }
 
-.card__svg {
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
   position: absolute;
-  left: 0;
-  top: 115px;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgb(226, 226, 226);
+  z-index: 1;
 }
 
-@keyframes LineFadeIn {
-  0% {
-    opacity: 0;
-    d: path(
-      "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
-    );
-    stroke: #fff;
-  }
-
-  50% {
-    opacity: 1;
-    d: path(
-      "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
-    );
-    stroke: #888bff;
-  }
-
-  100% {
-    opacity: 1;
-    d: path(
-      "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
-    );
-    stroke: #545581;
-  }
-}
-
-@keyframes ContentFadeIn {
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes ImageFadeIn {
-  0% {
-    transform: translate(-0.5rem, -0.5rem) scale(1.05);
-    opacity: 0;
-    filter: blur(2px);
-  }
-
-  50% {
-    opacity: 1;
-    filter: blur(2px);
-  }
-
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    filter: blur(0);
-  }
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: rgb(226, 226, 226);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 
+/* Fin technologies cards*/
 
-  /* Fin technologies cards*/
 
   /* Project*/
 
-  .container-project{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 200px;
-    padding-right: 200px;
-    
-    
   
-  }
-
-  .card-project {
-    position: relative;
-    background: #333;
-    width: 450px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 2rem;
-    color: #aaa;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .card__image-container {
-    margin: -2rem -2rem 1rem -2rem;
-  }
-  
-  .card__line {
-    opacity: 0;
-    animation: LineFadeIn 0.8s 0.8s forwards ease-in;
-  }
-  
-  .card__image {
-    opacity: 0;
-    animation: ImageFadeIn 0.8s 1.4s forwards;
-  }
-  
-  .card__title {
-    color: white;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    font-weight: 800;
-    letter-spacing: 0.01em;
-  }
-  
-  .card__content {
-    margin-top: -1rem;
-    opacity: 0;
-    animation: ContentFadeIn 0.8s 1.6s forwards;
-  }
-  
-  .card__svg {
-    position: absolute;
-    left: 0;
-    top: 115px;
-  }
-  
-  @keyframes LineFadeIn {
-    0% {
-      opacity: 0;
-      d: path(
-        "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
-      );
-      stroke: #fff;
-    }
-  
-    50% {
-      opacity: 1;
-      d: path(
-        "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
-      );
-      stroke: #888bff;
-    }
-  
-    100% {
-      opacity: 1;
-      d: path(
-        "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
-      );
-      stroke: #545581;
-    }
-  }
-  
-  @keyframes ContentFadeIn {
-    0% {
-      transform: translateY(-1rem);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes ImageFadeIn {
-    0% {
-      transform: translate(-0.5rem, -0.5rem) scale(1.05);
-      opacity: 0;
-      filter: blur(2px);
-    }
-  
-    50% {
-      opacity: 1;
-      filter: blur(2px);
-    }
-  
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
   
   /* Fin Project*/
