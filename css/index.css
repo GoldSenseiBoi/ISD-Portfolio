@@ -26,6 +26,7 @@
 .its_me{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 .about_us{
@@ -36,8 +37,8 @@
 }
 
 .about_us p{
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 200px;
+  padding-right: 200px;
   align-content: center;
 }
 
@@ -308,6 +309,7 @@ justify-content: center;
       0% {
         transform: translateY(-1rem);
         opacity: 0;
+        
       }
     
       100% {
