@@ -401,18 +401,12 @@ justify-content: center;
     position: relative;
     width: 45%;
     padding: 10px;
-    background-color: #333333;
+    background-color: #333;
     border-radius: 5px;
   }
 
   .timeline-content::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #333333 transparent transparent;
-    transform: translateY(-50%);
+    
   }
 
   .timeline-content-right {
@@ -421,17 +415,19 @@ justify-content: center;
 
   .timeline-content-right::after {
     right: 100%;
-    border-color: transparent transparent transparent #333333;
+    border-color: transparent transparent transparent #f9f6f6;
   }
 
   .timeline-title {
     font-weight: bold;
     font-size: 18px;
+    color: white;
   }
 
   .timeline-date {
-    font-style: italic;
+  
     font-size: 14px;
+    color: white;
   }
 
   .timeline-note {
@@ -441,6 +437,7 @@ justify-content: center;
 
   .timeline-icon {
     margin-left: 5px;
+    color: white;
   }
   /*Fin parcours*/
   
