@@ -358,4 +358,89 @@ justify-content: center;
 
     /*Fin Button Project*/
   /* Fin Project*/
+
+  /*Parcours*/
+
+  .timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+  }
+
+  .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #333333 transparent transparent;
+    transform: translateY(-50%);
+  }
+
+  .timeline-content-right {
+    margin-left: auto;
+  }
+
+  .timeline-content-right::after {
+    right: 100%;
+    border-color: transparent transparent transparent #333333;
+  }
+
+  .timeline-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .timeline-date {
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .timeline-note {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .timeline-icon {
+    margin-left: 5px;
+  }
+  /*Fin parcours*/
   
