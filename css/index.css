@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/super-onigiri');
+@import url('https://fonts.cdnfonts.com/css/amaranth?styles=14644');
+@import url('https://fonts.cdnfonts.com/css/montserrat?styles=17391');
 
 
 
@@ -15,6 +17,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 35px;
+}
+
+.descript h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 56px;
+}
+
+.descript h2 {
+  font-family: 'Montserrat', sans-serif;
+                                                
 }
 
 .corp1{
