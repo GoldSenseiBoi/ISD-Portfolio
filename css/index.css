@@ -42,6 +42,17 @@
   align-content: center;
 }
 
+
+
+/* Media query pour les écrans plus petits */
+@media only screen and (max-width: 600px) {
+  .about_us p {
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px; /* ajustement de la taille de police pour les petits écrans */
+  }
+}
+
 .titre_part{
   display: flex;
   align-items: center;
@@ -88,8 +99,8 @@
 
 .wrapper {
   padding-top: 100px;
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -183,6 +194,7 @@ a{
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
 
 }
 .container {
@@ -525,4 +537,7 @@ justify-content: center;
   }
 
   /*Fin Bts sio*/
+
+  /*Responsive portfolio*/
+  /* Fin Responsive Portfolio*/
   
