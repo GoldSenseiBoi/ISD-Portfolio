@@ -227,19 +227,16 @@ justify-content: center;
 }
 
 .skill-per.html {
-  /*progreso de las diferentes lenguajes*/
   width: 70%;
   animation-delay: 0.1s;
 }
 
 .skill-per.css {
-  /*progreso de las diferentes lenguajes*/
   width: 80%;
   animation-delay: 0.1s;
 }
 
 .skill-per.Boostrap {
-  /*progreso de las diferentes lenguajes*/
   width: 50%;
   animation-delay: 0.2s;
 }
