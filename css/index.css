@@ -76,6 +76,15 @@
 
 }
 
+.descrip-1{
+  display: flex;
+flex-direction: column;
+}
+
+.about_img{
+  text-align: center;
+}
+
 .head .nav ul {
   display: flex;
   padding-right: 120px;
@@ -193,6 +202,8 @@ a{
 .nav ul li {
     color: white;
 }
+
+
 
 
 
