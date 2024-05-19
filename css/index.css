@@ -453,11 +453,13 @@ flex-wrap: wrap;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       height: 350px;
       padding: 20px;
       background:  rgb(17,17,17);
       border-radius: 10px;
       margin: 20px;
+      margin-bottom: 5%;
     }
     
     .card {
